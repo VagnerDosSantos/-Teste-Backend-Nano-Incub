@@ -1,0 +1,121 @@
+:root {
+    --boxShadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+header::after {
+    position: absolute;
+    content: '';
+    display: block;
+    background-color: #131212;
+    box-shadow: var(--boxShadow);
+    width: 100%;
+    height: 100px;
+    z-index: -1;
+}
+
+.bg-gradient {
+    background: #43cea2;
+    background: -webkit-linear-gradient(to right, #185a9d, #43cea2);
+    background: linear-gradient(to right, #185a9d, #43cea2);
+}
+
+#container {
+    max-width: unset;
+    padding: 15px 20px 20px 20px;
+}
+
+#login-container {
+    margin: 0 auto;
+}
+
+.largura-minima {
+    width: 30px;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.max-width-50 {
+    max-width: 50%;
+}
+
+label {
+    color: currentColor !important;
+}
+
+.required:after {
+    content: "*";
+    font-size: 15px;
+    position: relative;
+    top: 0px;
+    left: 2px;
+    color: red;
+}
+
+.lista {
+    cursor: pointer;
+    margin: 0;
+    top: -7px;
+    position: relative;
+    margin: 0;
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+.lista>li {
+    padding: 10px;
+}
+
+@media (max-width: 992px) {
+    .largura-minima {
+        width: 100%;
+    }
+}
+
+.error-tooltip {
+    position: absolute;
+    right: -15px;
+    top: 10px;
+    font-size: 25px;
+}
+
+.page-footer {
+    padding-top: 0px;
+}
+
+.pace {
+    -webkit-pointer-events: none;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.pace-inactive {
+    display: none;
+}
+
+.pace .pace-progress {
+    background: #2962ff;
+    position: absolute;
+    z-index: 0;
+    top: 63px;
+    right: 100%;
+    width: 100%;
+    height: 3px;
+}
+
+.display-center {
+    margin: 0 auto;
+}

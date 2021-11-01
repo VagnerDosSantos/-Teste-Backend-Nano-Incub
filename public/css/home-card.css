@@ -1,0 +1,55 @@
+.home-card {
+    height: 150px;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.result {
+    display: flex;
+    text-shadow: 1px 1px 1px black;
+    color: white;
+    padding-top: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.result-info {
+    flex: 2;
+    margin-top: 10px;
+    font-size: 32px;
+}
+
+.result-number {
+    font-size: 42px;
+}
+
+.result-icon {
+    flex: 1;
+}
+
+.result-icon-i {
+    font-size: 150px;
+    margin-top: -14px;
+}
+
+.result-title {
+    font-size: 34px;
+    position: relative;
+    top: -16px;
+}
+
+.blue-gradient {
+    background: rgb(0, 145, 234);
+    background: linear-gradient(90deg, rgba(0, 145, 234, 1) 0%, rgba(0, 184, 212, 1) 50%, rgba(0, 191, 165, 1) 100%);
+}
+
+.green-gradient {
+    background: rgb(0, 200, 83);
+    background: linear-gradient(90deg, rgba(0, 200, 83, 1) 0%, rgba(100, 221, 23, 1) 100%);
+}
+
+.purple-gradient {
+    background: rgb(81, 45, 168);
+    background: linear-gradient(90deg, rgba(81, 45, 168, 1) 0%, rgba(98, 0, 234, 1) 50%, rgba(124, 77, 255, 1) 100%);
+}
